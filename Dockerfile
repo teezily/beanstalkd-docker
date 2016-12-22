@@ -1,7 +1,7 @@
 FROM debian:wheezy
 MAINTAINER Teezily "dev@teezily.com"
 
-ADD . /build
+ADD build /build
 
 RUN /build/prepare.sh && \
     /build/install.sh && \
